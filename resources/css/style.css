@@ -1,0 +1,565 @@
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Raleway Bold Italic'), local('Raleway-BoldItalic'), url(https://fonts.gstatic.com/s/raleway/v13/1Ptpg8zYS_SKggPNyCgw9qR_AtCb71ka4Q.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Raleway Light'), local('Raleway-Light'), url(https://fonts.gstatic.com/s/raleway/v13/1Ptrg8zYS_SKggPNwIYqWqZPANqczVs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v13/1Ptug8zYS_SKggPNyC0IT4ttDfA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: bold;
+  font-weight: 700;
+  src: local('Raleway Bold'), local('Raleway-Bold'), url(https://fonts.gstatic.com/s/raleway/v13/1Ptrg8zYS_SKggPNwJYtWqZPANqczVs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Raleway Black'), local('Raleway-Black'), url(https://fonts.gstatic.com/s/raleway/v13/1Ptrg8zYS_SKggPNwK4vWqZPANqczVs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* body */
+html {
+  font-family: raleway;
+  font-style: normal;
+  font-size: 1em;
+  color: #3E4E54;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: bold;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+/* header/nav bar */
+.header {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  background-color: #ffffff;
+  width: 100%;
+  height: 4rem;
+}
+
+.header .left {
+  width: 4%;
+}
+
+.header .center {
+  width: 56%;
+  justify-content: flex-start;
+}
+
+.header .right {
+  width: 40%;
+  justify-content: space-between;
+}
+
+.logo {
+  padding-left: 1.5rem;
+  float: left;
+}
+
+.header span {
+  float: left;
+}
+
+.header .actions {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.Academy {
+  color: #879AA1;
+}
+
+.header .nav {
+  padding-right: 1.5rem;
+  float: right;
+}
+
+li {
+  padding-left: 1rem;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: #3E4E54;
+}
+
+a:hover {
+  transition-property: color;
+  color: #AD808B
+}
+
+a:active {
+  transition-property: color;
+  color: #879AA1;
+}
+
+/* lead banner */
+.lead-banner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 4rem;
+  height: 80vh;
+  background-color: #DFE9ED;
+}
+
+.lead-banner img {
+  padding: 2rem 1.5rem;
+  width: 60%;
+  height: 90%;
+  flex: 1 1 0;
+}
+
+.banner-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 1.5rem;
+  padding-right: 1.5rem;
+  width: 40%;
+  flex: 1 1 0;
+}
+
+button {
+  border-radius: 25px;
+  background-color: #CB808B;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  margin-top: 1.5rem;
+  width: 80%;
+  text-decoration: none;
+}
+
+button a {
+  color: #ffffff;
+}
+
+button:hover {
+  background-color: #3E4E54;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* practise banner */
+.practise {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.practise-image {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: auto;
+}
+
+.practise-image img {
+  /* padding-top: : 2rem; */
+  padding-bottom: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  width: 100%;
+  height: auto;
+  flex: 1 1 0;
+}
+
+.practise-image h2 {
+  padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-weight: bold;
+}
+
+.practise-image p {
+  padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.practise-image .name {
+  color: #000000;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.schedule {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  min-width: 0;
+  border: solid;
+  border-color: #DFE9ED;
+  margin-left: 3rem;
+}
+
+.schedule-item {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-height: 100%;
+  border-bottom: solid;
+  border-color: #DFE9ED;
+}
+
+.schedule-item:last-child {
+  background-color: #DFE9ED;
+}
+
+.schedule img {
+  width: 35%;
+  height: 35%;
+  padding: 1rem;
+}
+
+.schedule-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%;
+  max-height: 100%;
+  padding-top: 1rem;
+}
+
+.schedule-text h3 {
+  font-weight: bold;
+}
+
+.schedule-text, h3, p {
+  padding-bottom: .5rem;
+}
+
+.schedule-text a {
+  color: #5F9BB0;
+}
+
+/* grid */
+.start-learning {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #DFE9ED;
+}
+
+.start-learning h2 {
+  margin-top: 2rem;
+  font-weight: bold;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: 8%;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  width: 28%;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+}
+
+.grid-item h3 {
+  padding-left: 1rem;
+  padding-top: 1rem;
+  font-weight: bold;
+}
+
+.grid-item p {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: .5rem;
+}
+
+.grid-item p:last-child {
+  padding-bottom: 1.5rem;
+}
+
+/* thesis */
+.thesis-header {
+  margin-top: 2rem;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+.thesis {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.thesis-video {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: auto;
+}
+
+.thesis-video video {
+  /* padding-top: : 2rem; */
+  padding-bottom: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  width: 100%;
+  height: auto;
+  flex: 1 1 0;
+}
+
+.thesis-video video:focus {
+  outline: none;
+}
+
+.thesis-video h2 {
+  padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-weight: bold;
+}
+
+.thesis-video p {
+  padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.thesis-video .name {
+  color: #000000;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.exhibit {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  min-width: 0;
+  border: solid;
+  border-color: #DFE9ED;
+  margin-left: 3rem;
+}
+
+.exhibit-item {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-height: 100%;
+  border-bottom: solid;
+  border-color: #DFE9ED;
+}
+
+.exhibit-item:first-child {
+  background-color: #DFE9ED;
+}
+
+.exhibit img {
+  width: 35%;
+  height: 35%;
+  padding: 1rem;
+}
+
+.exhibit-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%;
+  max-height: 100%;
+  padding-top: 1rem;
+}
+
+.exhibit-text h3 {
+  font-weight: bold;
+}
+
+.exhibit-text, h3, p {
+  padding-bottom: .5rem;
+}
+
+footer {
+  display: flex;
+  border-top: solid;
+  border-color: #DFE9ED;
+  padding-top: 1rem;
+}
+
+footer p {
+  margin-left: 1.5rem;
+}
+
+footer a {
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 1rem;
+}
+
+/* media queries */
+
+/* header */
+@media only screen and (max-width: 500px) {
+  .header .logo,
+  .header span,
+  .header .nav,
+  .header ul,
+  .header li,
+  .practise-image,
+  .schedule,
+  .grid,
+  .thesis-video h2,
+  .thesis-video p,
+  .exhibit {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .header .actions, .practise-mobile, .grid-mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .lead-banner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  .lead-banner img {
+    width: 100%;
+    height: auto;
+  }
+  .banner-text {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .banner-text h1 {
+    padding-top: 2rem;
+  }
+  .banner-text h3 {
+    padding-top: 2rem;
+  }
+  .banner button {
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+  }
+  .practise {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  .practise-mobile {
+    width: 100%;
+    height: auto;
+  }
+  .practise-mobile img {
+    width: 94%;
+    height: auto;
+    padding: 1rem;
+  }
+  .practise-mobile h3 {
+    font-weight: bold;
+  }
+  .practise-mobile a {
+    color: #5F9BB0;
+  }
+  .practise-mobile h3, .practise-mobile p, .practise-mobile a {
+    margin-right: 1rem;
+  }
+  .practise-mobile a {
+    padding-bottom: 4rem;
+  }
+  .start-learning {
+    background-color: #ffffff;
+    margin-top: 1rem;
+    border-top: solid;
+    border-color: #DFE9ED;
+  }
+  .grid-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+  .grid-mobile h3 {
+    font-weight: bold;
+    background-color: #DFE9ED;
+    text-align: center;
+    width: 90%;
+    margin-top: .5rem;
+    padding: 1rem;
+  }
+  .thesis-video {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+  .thesis-video video {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+}
